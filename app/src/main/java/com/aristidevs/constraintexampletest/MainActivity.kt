@@ -45,7 +45,7 @@ fun BoxConstraint(){
         val startGuide = createGuidelineFromStart(0.2f)
 
         Box(modifier = Modifier.size(100.dp).background(Color.Red).constrainAs(boxRed){
-            top.linkTo(parent.)
+            top.linkTo(parent.top)
             start.linkTo(parent.start)
             end.linkTo(boxBlue.start)
         })
